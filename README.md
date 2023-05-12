@@ -20,3 +20,5 @@ Além disso, atualize a lista abaixo.
 ## Reprex
 
 - [Missing values in date column on excel](20230512T084359/)
+  - [Missing value on a date column on excel throws validation error · Issue #1503 · frictionlessdata/framework](https://github.com/frictionlessdata/framework/issues/1503)
+  - [Reading resource data from excel throws source error · Issue #1504 · frictionlessdata/framework](https://github.com/frictionlessdata/framework/issues/1504)
