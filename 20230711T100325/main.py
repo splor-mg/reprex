@@ -1,6 +1,6 @@
 from frictionless import Resource, transform, steps
 
-resource = Resource('resource.yaml')
+resource = Resource('https://raw.githubusercontent.com/splor-mg/datapackage-reprex/main/20230711T100325/resource.yaml')
 
 transform(resource, steps=[steps.table_normalize()])
 
