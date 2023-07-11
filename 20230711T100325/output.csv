@@ -1,0 +1,3 @@
+id,valid,amount,memo,valid_from,valid_to,updated_at
+1,no,120,some information,01/02/1995,01/02/1995,30/11/1994 09:45:00
+2,yes,"2.000,5",,01/02/2002,01/02/2002,30/09/2002 10:45:00

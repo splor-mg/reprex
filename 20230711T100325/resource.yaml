@@ -1,0 +1,29 @@
+name: reprex
+format: csv
+path: input.csv
+schema:
+  fields:
+    - name: id
+      type: integer
+    - name: valid
+      type: boolean
+      trueValues: ['yes']
+      falseValues: ['no']
+    - name: amount
+      type: number
+      decimalChar: ','
+      groupChar: '.'
+      bareNumber: false
+    - name: memo
+      type: string
+      missingValues: 
+        - 'NA'
+    - name: valid_from
+      type: date
+      format: '%m/%d/%Y'
+    - name: valid_to
+      type: date
+      format: '%d/%m/%Y'
+    - name: updated_at
+      type: datetime
+      format: '%d/%m/%Y %H:%M:%S'
