@@ -1,0 +1,7 @@
+fields:
+  - name: a
+    type: date
+  - name: b
+    type: boolean
+  - name: c
+    type: number
