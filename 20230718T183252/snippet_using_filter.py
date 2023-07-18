@@ -1,5 +1,5 @@
 from frictionless import Package, Resource, steps, transform, Field
-
+import petl as etl
 
 data_package = Package(resources=[Resource(path='data-raw/test_data.xlsx', name='base-obz')])
 
@@ -16,6 +16,9 @@ target = transform(
     ]
 )
 
+table = target.to_petl()
+
+etl.tocsv(table, 'data/filtered_test_data.csv', encoding='utf-8')
 
 print(target.schema)
 print(target.to_view())

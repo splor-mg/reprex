@@ -115,3 +115,76 @@ print(f'Arquivo Salvo: {resource.name}.csv \nnrows: {len(df)} \nColumns:{str(df.
 
 O erro acima também apaga linhas indevidas dos outros arquivos Raw. Entendo que o problema seja causado por uso errôneo do generator criado no custom step remove_blank_rows(). Buscou-se substituir o uso desse custom step pelo step filter do frictionless para corrigir o problema.
 
+# Using filter to remove blank rows
+
+```
+
+
+table from: data-raw/test_data.xlsx
++------+----------+-----------+
+| id   | variable | value     |
++======+==========+===========+
+|    1 | None     | None      |
++------+----------+-----------+
+|    2 | 'str'    | None      |
++------+----------+-----------+
+|    3 | 'index'  |        41 |
++------+----------+-----------+
+| None | None     | None      |
++------+----------+-----------+
+|    5 | ' '      | "banana'" |
++------+----------+-----------+
+
+{'name': 'base-obz',
+ 'type': 'table',
+ 'path': 'data-raw/test_data.xlsx',
+ 'scheme': 'file',
+ 'format': 'xlsx',
+ 'mediatype': 'application/vnd.ms-excel'}
+
+
+ {'fields': [{'name': 'id', 'type': 'integer'},
+            {'name': 'variable', 'type': 'string'},
+            {'name': 'value', 'type': 'any'}]}
++----+----------+-----------+
+| id | variable | value     |
++====+==========+===========+
+|  3 | 'index'  |        41 |
++----+----------+-----------+
+|  5 | ' '      | "banana'" |
++----+----------+-----------+
+
+Process finished with exit code 0
+
+```
+As colunas contendo None são removidas. Parece o comportamento esperado.
+
+Para obter o resultado acima, foi utilizado o seguinte script:
+
+```
+from frictionless import Package, Resource, steps, transform, Field
+import petl as etl
+
+data_package = Package(resources=[Resource(path='data-raw/test_data.xlsx', name='base-obz')])
+
+print(data_package.get_resource('base-obz').to_view())
+print(data_package.get_resource('base-obz'))
+
+
+source = data_package.get_resource('base-obz')
+target = transform(
+    source,
+    steps=[
+        steps.table_normalize(),
+        steps.row_filter(formula="id != None and variable != None and value != None")
+    ]
+)
+
+table = target.to_petl()
+
+etl.tocsv(table, 'data/filtered_test_data.csv', encoding='utf-8')
+
+print(target.schema)
+print(target.to_view())
+
+```
