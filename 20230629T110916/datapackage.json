@@ -1,0 +1,38 @@
+{
+  "resources": [
+    {
+      "name": "1501",
+      "path": "1501.xlsx",
+      "format": "xlsx",
+      "encoding": "utf-8",
+      "dialect": {
+        "excel": {
+          "sheet": "BASE OBZ",
+          "headerRows": [
+            2
+          ]
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "UNIDADE ORÇAMENTÁRIA",
+            "type": "string"
+          },
+          {
+            "name": "PROGRAMA",
+            "type": "string"
+          },
+          {
+            "name": "AÇÃO",
+            "type": "string"
+          },
+          {
+            "name": "ELEMENTO",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
