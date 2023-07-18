@@ -1,0 +1,9 @@
+pandas==2.0.2
+frictionless==5.13.1
+frictionless[pandas]
+frictionless[excel]
+beautifulsoup4==4.12.2
+pytz==2023.3
+pytest==7.3.2
+unidecode== 1.3.6
+git+https://github.com/splor-mg/dpm.git@custom-steps#egg=dpm

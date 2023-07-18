@@ -1,0 +1,30 @@
+name: obz-dados
+sources:
+  - title: Sharepoint da SPLOR
+    path: https://cecad365.sharepoint.com/sites/Splor/
+    drive: Documentos
+    item: General/@dcmefo/2023/OBZ/bases
+    dest: data-raw/
+resources:
+  - name: "2281"
+    title: UTRAMIG 2281 - Base OBZ
+    path: data-raw/2281.xlsx
+    format: xlsx
+    encoding: windows-1252
+    dialect: dialect.yaml
+    schema: schemas/obz-dados.yaml
+  - name: "2441"
+    title: ARSAE 2441 - Base OBZ
+    path: data-raw/2441.xlsx
+    format: xlsx
+    encoding: windows-1252
+    dialect: dialect.yaml
+    schema: schemas/obz-dados.yaml
+  - name: "2101"
+    title: IEF 2101 - Base OBZ
+    path: data-raw/2101.xlsx
+    format: xlsx
+    encoding: windows-1252
+    dialect: dialect.yaml
+    schema: schemas/obz-dados.yaml
+

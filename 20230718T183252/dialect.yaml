@@ -1,0 +1,5 @@
+
+excel:
+  sheet: BASE OBZ
+headerRows: # mesmo nível da propriedade excel
+  - 2

@@ -1,0 +1,109 @@
+fields:
+  - name: UNIDADE ORÇAMENTÁRIA
+    target: uo
+    type: string
+  - name: N2
+    target: n2
+    type: string
+
+  - name: SUB SIGLA
+    target: sub_sigla_dummy
+    type: string 
+
+  - name: N3
+    target: n3
+    type: string
+  - name: PROGRAMAUO
+    target: dummy_programauo
+    type: string
+  - name: PROGRAMA
+    target: programa
+    type: string
+
+  - name: prog cod
+    target: dummy_prog_cod
+    type: string
+    
+  - name: AÇÃO
+    target: acao
+    type: string
+  - name: ELEMENTO
+    target: elemento
+    type: string
+  
+  - name: elem cod
+    target: dummy_elem_cod
+    type: string
+
+  - name: ELEMENTO_ITEM
+    target: elemento_item
+    type: string
+
+  - name: elem_cod
+    target: dummy_elem_cod_2
+    type: string
+
+  - name: Agrupamento
+    target: agrupamento
+    type: string
+
+  - name: GRUPO
+    target: grupo
+    type: string
+
+  - name: FONTEUO
+    target: dummy_fonte_uo
+    type: string
+
+  - name: FONTE
+    target: fonte_cod
+    type: string
+
+  
+  - name: DESCRIÇÃO DO ITEM
+    target: descricao_do_item
+    type: string
+  - name: NOVO?
+    target: is_new_item
+    type: boolean
+    trueValues: ['Sim', 'SIM', 'sim']
+    falseValues: ['Não', 'NÃO', 'não', 'Nao', 'NAO', 'nao']
+  - name: PREMISSA VOLUME
+    target: premissa_volume
+    type: string
+  - name: VOLUME
+    target: volume 
+    type: number
+  - name: PREMISSA DE PREÇO
+    target: premissa_de_preco
+    type: string
+  - name: PREÇO UNITÁRIO
+    target: vr_unitario
+    type: number
+  - name: FREQUÊNCIA PAGAMENTO
+    target: freq_pagamento
+    type: integer
+  - name: VALOR TOTAL ITEM
+    target: vr_total_item
+    type: number
+  - name: CLASSIFICAÇÃO CENÁRIO
+    target: classificacao_cenario
+    type: string
+  - name: DESCRIÇÃO DO CENÁRIO
+    target: descricao_do_cenario
+    type: string
+  - name: RISCO DE NÃO FAZER
+    target: risco_de_nao_fazer
+    type: string
+  - name: BENEFICIO AO FAZER
+    target: beneficio_ao_fazer
+    type: string
+  - name: PRIORIDADE N3
+    target: prioridade_n3
+    type: integer
+  - name: PRIORIDADE N2
+    target: prioridade_n2
+    type: integer
+  - name: PRIORIDADE N1
+    target: prioridade_n1 
+    type: integer
