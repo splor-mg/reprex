@@ -6,11 +6,11 @@
       "format": "xlsx",
       "encoding": "utf-8",
       "dialect": {
+        "headerRows": [
+          2
+        ],
         "excel": {
-          "sheet": "BASE OBZ",
-          "headerRows": [
-            2
-          ]
+          "sheet": "BASE OBZ"
         }
       },
       "schema": {
@@ -21,10 +21,6 @@
           },
           {
             "name": "PROGRAMA",
-            "type": "string"
-          },
-          {
-            "name": "AÇÃO",
             "type": "string"
           },
           {

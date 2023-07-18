@@ -1,0 +1,19 @@
+resources:
+  - name: '1501'
+    type: table
+    path: 1501.xlsx
+    scheme: file
+    format: xlsx
+    dialect:
+      headerRows:
+        - 2
+      excel:
+        sheet: BASE OBZ
+    schema:
+      fields:
+        - name: UNIDADE ORÇAMENTÁRIA
+          type: string
+        - name: PROGRAMA
+          type: string
+        - name: ELEMENTO
+          type: string
