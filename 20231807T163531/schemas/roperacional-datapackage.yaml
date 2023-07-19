@@ -1,0 +1,100 @@
+ resources:
+  - name: alteracoes-orcamentarias
+    type: table
+    path: [alteracoes_orcamentarias_2021.xlsx, alteracoes_orcamentarias_2022.xlsx, alteracoes_orcamentarias_2023.xlsx] 
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: ANO
+          title: 'Ano de exercício'
+          description: 'Ano de exercício da execução orçamentária'
+          type: integer
+        - name: UO_COD
+          title: 'Código da Unidade Orçamentária'
+          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          type: integer
+        - name: SUPLEMENTACAO
+          title: 'Valor da suplementação'
+          description: 'Valor em reais suplementado pelo decreto de alteração orçamentária'
+          type: number
+        - name: ANULACAO
+          type: integer
+          title: 'Valor da anulação'
+          description: 'Valor da anulação no decreto de alteração orçamentária'
+  - name: cota-item-data
+    type: table
+    path: [cota-item-data_2021.xlsx, cota-item-data_2022.xlsx, cota-item-data_2023.xlsx]
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: Ano de Exercício
+          title: 'Ano de exercício'
+          description: 'Ano de exercício da execução orçamentária'
+          type: integer
+        - name: UO_COD
+          title: 'Código da Unidade Orçamentária'
+          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          type: integer
+        - name: Operador - Registro
+          title: 'Responsável pelo registro da cota orçamentária no sistema SIAFI'
+          description: 'Matrícula (MASP) do responsável pelo registro da cota orçamentária no sistema SIAFI'
+          type: string
+        - name: COTA APROVADA LIQUIDA
+          description: 'Valor líquido em reais resultante da expressão valor da cota aprovada - valor anulação da cota aprovada'
+          type: number
+  - name: credito-inicial-autorizado
+    type: table
+    path: [credito-inicial-autorizado_2021.xlsx, credito-inicial-autorizado_2022.xlsx, credito-inicial-autorizado_2023.xlsx] 
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: ANO
+          title: 'Ano de exercício'
+          description: 'Ano de exercício da execução orçamentária'
+          type: integer
+        - name: UO_COD
+          title: 'Código da Unidade Orçamentária'
+          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          type: integer
+        - name: CREDITO_INICIAL
+          description: 'Valor em reais do crédito aprovado pela Lei Orçamentária Anual'
+          type: integer
+        - name: CREDITO_AUTORIZADO
+          type: number 
+          description: 'Valor em reais correspondente ao crédito inicial + alterações orçamentárias ao longo do exercício'
+  - name: execucao
+    type: table
+    path: [execucao_2022-02.xlsx, execucao_2022-03.xlsx, execucao_2022-04.xlsx]                           
+    scheme: file
+    format: xlsx
+    mediatype: application/vnd.ms-excel
+    encoding: utf-8
+    schema:
+      fields:
+        - name: ANO
+          title: 'Ano de exercício'
+          description: 'Ano de exercício da execução orçamentária'
+          type: integer
+        - name: UO_COD
+          title: 'Código da Unidade Orçamentária'
+          description: 'Percentente à classificação institucional do orçamento, corresponde à Unidade Administrativa contemplada com recursos orçamentários responsável pela execução do orçamento' 
+          type: integer
+        - name: DESPESA_EMP
+          title: 'Despesa empenhada'
+          description: 'Valor líquido da despesa empenhada'
+          type: number
+        - name: DESPESA_LIQ
+          title: 'Despesa liquidada'
+          description: 'Valor líquido da despesa liquidada'
+          type: number
+        
+  
