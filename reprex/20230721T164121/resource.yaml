@@ -1,0 +1,16 @@
+name: transform
+type: table
+data: []
+scheme: ''
+format: inline
+mediatype: text/csv
+extrapaths: []
+schema:
+  fields:
+    - name: pkey
+      type: integer
+      title: Primary Key
+    - name: name
+      type: string
+    - name: population
+      type: integer
