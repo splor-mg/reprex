@@ -1,0 +1,20 @@
+name: alteracoes-orcamentarias_2021
+type: table
+path: ["../data-raw/alteracoes-orcamentarias_2021.csv", "../data-raw/alteracoes-orcamentarias_2022.csv"]
+scheme: file
+format: csv
+mediatype: text/csv
+encoding: utf-8
+dialect:
+  csv:
+    delimiter: ;
+schema:
+  fields:
+    - name: ANO
+      type: integer
+    - name: UO_COD
+      type: integer
+    - name: SUPLEMENTACAO
+      type: integer
+    - name: ANULACAO
+      type: integer
