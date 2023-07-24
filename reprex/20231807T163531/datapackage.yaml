@@ -1,0 +1,24 @@
+name: multipart-resource
+resources:
+- name: excel
+  type: table
+  path: ["data-raw/alteracoes-orcamentarias_2021.xlsx", "data-raw/alteracoes-orcamentarias_2022.xlsx"]
+  scheme: file
+  format: xlsx
+  mediatype: application/vnd.ms-excel
+  encoding: utf-8
+  schema: schemas/alteracoes-orcamentarias.yaml
+  dialect: 
+    excel: 
+      sheet: base
+- name: csv
+  type: table
+  path: ["data-raw/alteracoes-orcamentarias_2021.csv", "data-raw/alteracoes-orcamentarias_2022.csv"]
+  scheme: file
+  format: csv
+  mediatype: text/csv
+  encoding: utf-8
+  schema: schemas/alteracoes-orcamentarias.yaml
+  dialect:
+    csv:
+      delimiter: ';'

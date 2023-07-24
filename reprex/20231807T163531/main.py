@@ -1,15 +1,10 @@
-import frictionless
-from frictionless import Schema, describe
-from frictionless import validate
-from pprint import pprint
-# describe = describe("data-raw/alteracoes-orcamentarias_2021.csv")
-# describe.to_yaml("schemas/alteracoes-orcamentarias.yaml")
+from frictionless import Package
 
-report = validate('schemas/alteracoes-orcamentarias.yaml')
-print(report)
+package = Package('datapackage.yaml')
+
+excel = package.get_resource('excel')
+print(excel.validate())
 
 
-
-
-
-
+csv = package.get_resource('csv')
+print(csv.validate())
