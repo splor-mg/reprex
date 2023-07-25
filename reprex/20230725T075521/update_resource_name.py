@@ -1,7 +1,7 @@
 from frictionless import transform, steps, Package
 from pprint import pprint
 
-dp = Package('datapackage.json')
+dp = Package('https://raw.githubusercontent.com/splor-mg/datapackage-reprex/main/reprex/20230725T075521/datapackage.json')
 
 print(f"{dp.get_resource('fact').validate().valid=}")
 
