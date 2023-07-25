@@ -12,3 +12,5 @@ transform(dp, steps=[
 ])
 
 pprint(dp.get_resource('fact').validate().flatten(['title', 'message']))
+
+dp.to_yaml('datapackage.yaml')
