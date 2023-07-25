@@ -30,5 +30,4 @@ Além disso, atualize a lista abaixo.
 - [20230718T183252](reprex/20230718T183252)
 - [20231807T163531](reprex/20231807T163531): multipart excel files in datapackage resource
 - [20230721T164121](reprex/20230721T164121)
-- [20230721T164121](reprex/20230721T164121)
   - [The data resource has an error: properties "path" and "data" is mutually exclusive when calling resource.to\_view() · Issue #1572 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1572)
