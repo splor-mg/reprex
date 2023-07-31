@@ -1,0 +1,20 @@
+resources:
+  - name: csv
+    path: data.csv
+    format: csv
+    encoding: utf-8
+    schema:
+      fields:
+        - name: a
+          type: string
+        - name: b
+          type: any
+  - name: excel
+    path: data.xlsx
+    format: xlsx
+    schema:
+      fields:
+        - name: a
+          type: string
+        - name: b
+          type: any
