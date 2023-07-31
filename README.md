@@ -33,3 +33,5 @@ Além disso, atualize a lista abaixo.
   - [The data resource has an error: properties "path" and "data" is mutually exclusive when calling resource.to\_view() · Issue #1572 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1572)
 - [20230725T075521](reprex/20230725T075521)
   - [Update of primaryKey and foreignKeys when field is renamed · Issue #1560 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1560#issuecomment-1649788083)
+- [20230731T181821](reprex/20230731T181821): 
+  - [Storing numbers in a string field in excel throws validation error · Issue #1576 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1576)
