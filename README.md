@@ -1,4 +1,4 @@
-# Data packages for reproducible examples
+# Minimal reproducible examples
 
 Esse repositório armazena exemplos de [data packages](https://specs.frictionlessdata.io/) para construção de [minimal, reproducible examples (reprex)](https://stackoverflow.com/help/minimal-reproducible-example).
 
