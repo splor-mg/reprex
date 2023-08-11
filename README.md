@@ -1,8 +1,8 @@
 # Minimal reproducible examples
 
-Esse repositório armazena exemplos de [data packages](https://specs.frictionlessdata.io/) para construção de [minimal, reproducible examples (reprex)](https://stackoverflow.com/help/minimal-reproducible-example).
+Esse repositório armazena [minimal, reproducible examples (reprex)](https://stackoverflow.com/help/minimal-reproducible-example) construídos pela Assessoria de Dados.
 
-Ao identificar um data package com algum caso de uso específico que merece ser testado, crie uma nova pasta com nome `YYYYDDMMThhmmss` dentro da pasta reprex. Por exemplo:
+Ao identificar a necessidade de um reprex crie uma nova pasta com nome `YYYYDDMMThhmmss` dentro da pasta reprex. Por exemplo:
 
 ```
 .
@@ -11,7 +11,7 @@ Ao identificar um data package com algum caso de uso específico que merece ser 
 │ └── datapackage.json
 ```
 
-Você pode [compartilhar o seu data package online](https://frictionlessdata.io/blog/2016/08/29/publish-online/) utilizando o [link do Github para arquivos raw](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file#viewing-or-copying-the-raw-file-content)
+Se seu reprex usar um data package, você pode [compartilhar ele online](https://frictionlessdata.io/blog/2016/08/29/publish-online/) utilizando o [link do Github para arquivos raw](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file#viewing-or-copying-the-raw-file-content)
 
 - <https://raw.githubusercontent.com/splor-mg/datapackage-reprex/main/20230327T162719/datapackage.json>
 
