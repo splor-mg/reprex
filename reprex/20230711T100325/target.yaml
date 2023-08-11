@@ -1,0 +1,15 @@
+fields:
+  - name: id
+    type: integer
+  - name: valid
+    type: boolean
+  - name: amount
+    type: number
+  - name: memo
+    type: string
+  - name: valid_from
+    type: date
+  - name: valid_to
+    type: date
+  - name: updated_at
+    type: datetime
