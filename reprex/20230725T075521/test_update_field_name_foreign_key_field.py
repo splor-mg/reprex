@@ -1,5 +1,4 @@
 from frictionless import transform, steps, Package
-from pprint import pprint
 
 def test():
     dp = Package('datapackage.json')
@@ -10,4 +9,5 @@ def test():
         ])
     ])
 
+    # foreignKeys[0].fields from uo_cod to uo
     assert dp.get_resource('fact').schema.foreign_keys[0] == {'fields': ['uo'], 'reference': {'fields': ['uo'], 'resource': 'dim'}}
