@@ -35,3 +35,5 @@ Além disso, atualize a lista abaixo.
   - [Update of primaryKey and foreignKeys when field is renamed · Issue #1560 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1560#issuecomment-1649788083)
 - [20230731T181821](reprex/20230731T181821): 
   - [Storing numbers in a string field in excel throws validation error · Issue #1576 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1576)
+- [20230901T171459](https://github.com/splor-mg/reprex/tree/main/reprex/20230901T171459): Handling decimal separator using Power BI locale options and column types with locale · Issue #68
+  - [Create reprex for csv reading following RFC4180 in PowerBI](https://github.com/splor-mg/atividades/issues/68)
