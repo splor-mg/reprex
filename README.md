@@ -37,3 +37,5 @@ Além disso, atualize a lista abaixo.
   - [Storing numbers in a string field in excel throws validation error · Issue #1576 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1576)
 - [20230901T171459](https://github.com/splor-mg/reprex/tree/main/reprex/20230901T171459): Handling decimal separator using Power BI locale options and column types with locale · Issue #68
   - [Create reprex for csv reading following RFC4180 in PowerBI](https://github.com/splor-mg/atividades/issues/68)
+- [20230906T154034](https://github.com/splor-mg/reprex/tree/main/reprex/20230906T154034): reprex of a data.yaml for sing in DPM install_resources · Issue #36 
+  - [Allow filter on data.yaml to allow download of a subset of resources](https://github.com/splor-mg/dpm/issues/36)
