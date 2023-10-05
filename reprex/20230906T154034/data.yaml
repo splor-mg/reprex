@@ -1,0 +1,9 @@
+  resources:
+  - name: reprex-excel
+    path: https://raw.githubusercontent.com/splor-mg/reprex/main/reprex/20230512T084359/datapackage.json
+    token:
+    install_resources: ['plaintext', 'excel']
+  - name: pdf-resource
+    path: https://raw.githubusercontent.com/transparencia-mg/datapackage-reprex/pdf-resource/datapackage.json
+    token: 
+    install_resources: ['populacao', 'B']
