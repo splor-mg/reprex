@@ -1,0 +1,7 @@
+fields:
+  - name: DepartmentID
+    type: integer
+  - name: DepartmentName
+    type: string
+primaryKey:
+  - DepartmentID

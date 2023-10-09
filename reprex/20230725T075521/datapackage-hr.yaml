@@ -1,0 +1,14 @@
+name: hr
+resources:
+  - name: employees
+    type: table
+    path: data-raw/employees.csv
+    format: csv
+    encoding: utf-8
+    schema: schemas/employees.yaml
+  - name: departments
+    type: table
+    path: data-raw/departments.csv
+    format: csv
+    encoding: utf-8
+    schema: schemas/departments.yaml

@@ -1,0 +1,16 @@
+fields:
+  - name: EmployeeID
+    type: integer
+  - name: Name
+    type: string
+  - name: DepartmentID
+    type: integer
+primaryKey:
+  - EmployeeID
+foreignKeys:
+  - fields:
+      - DepartmentID
+    reference:
+      fields:
+        - DepartmentID
+      resource: departments
