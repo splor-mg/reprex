@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"base\"]"
+        "value": "[\"Planilha1\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -41,7 +41,7 @@
     "sourceQueryCulture": "pt-BR",
     "tables": [
       {
-        "name": "base",
+        "name": "Planilha1",
         "annotations": [
           {
             "name": "PBI_ResultType",
@@ -59,7 +59,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "02e88daf-6f7f-4991-8515-893709388dba",
+            "lineageTag": "fb21f025-d6a5-4244-9ea1-47304d9089bb",
             "sourceColumn": "UO",
             "summarizeBy": "sum"
           },
@@ -73,7 +73,7 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "1aeeada3-5b12-4ed3-af3a-623ba896a87a",
+            "lineageTag": "53139ccd-02bf-4b26-8d9e-b9513ed8811b",
             "sourceColumn": "GRUPO",
             "summarizeBy": "sum"
           },
@@ -87,26 +87,25 @@
             ],
             "dataType": "int64",
             "formatString": "0",
-            "lineageTag": "a1022fea-f1b9-42dc-80e5-65059fdd6dea",
+            "lineageTag": "ed1ede17-5412-476d-8016-2c25471c7162",
             "sourceColumn": "EMPENHADO",
             "summarizeBy": "sum"
           }
         ],
-        "lineageTag": "dc62e9ee-88a5-45f6-b61c-279defcb1fb8",
+        "lineageTag": "62857217-ea0e-4794-a9e6-4795aadb5ced",
         "partitions": [
           {
-            "name": "base",
+            "name": "Planilha1",
             "mode": "import",
             "source": {
               "expression": [
                 "let",
-                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Henrique\\assessoria_dados\\datapackage-reprex\\reprex\\20231110T122940\\data-raw\\base.xlsx\"), null, true),",
-                "    base_Sheet = Fonte{[Item=\"base\",Kind=\"Sheet\"]}[Data],",
-                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(base_Sheet, [PromoteAllScalars=true]),",
-                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"UO\", Int64.Type}, {\"GRUPO\", Int64.Type}, {\"FONTE \", Int64.Type}, {\"EMPENHADO\", Int64.Type}}),",
-                "    #\"Colunas Removidas\" = Table.RemoveColumns(#\"Tipo Alterado\",{\"FONTE \"})",
+                "    Fonte = Excel.Workbook(File.Contents(\"C:\\Users\\Henrique\\assessoria_dados\\datapackage-reprex\\reprex\\20231110T122940\\data-raw\\exec.xlsx\"), null, true),",
+                "    Planilha1_Sheet = Fonte{[Item=\"Planilha1\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(Planilha1_Sheet, [PromoteAllScalars=true]),",
+                "    #\"Tipo Alterado\" = Table.TransformColumnTypes(#\"Cabeçalhos Promovidos\",{{\"UO\", Int64.Type}, {\"GRUPO\", Int64.Type}, {\"EMPENHADO\", Int64.Type}})",
                 "in",
-                "    #\"Colunas Removidas\""
+                "    #\"Tipo Alterado\""
               ],
               "type": "m"
             }
@@ -114,7 +113,7 @@
         ]
       },
       {
-        "name": "DateTableTemplate_99c2463b-36e1-44ca-b4d4-38350bb99698",
+        "name": "DateTableTemplate_00550e8d-5300-4312-bdaf-e3e58ba8eb4c",
         "annotations": [
           {
             "name": "__PBI_TemplateDateTable",
@@ -139,7 +138,7 @@
             "formatString": "General Date",
             "isHidden": true,
             "isNameInferred": true,
-            "lineageTag": "df7f6848-80d6-4b97-a6cc-6ddb6dc9894e",
+            "lineageTag": "d697626a-9965-4b65-89b5-323ee8358fe4",
             "sourceColumn": "[Date]",
             "summarizeBy": "none",
             "type": "calculatedTableColumn"
@@ -161,7 +160,7 @@
             "expression": "YEAR([Date])",
             "formatString": "0",
             "isHidden": true,
-            "lineageTag": "93ea05a1-f992-4b98-b8db-1d63577a32ae",
+            "lineageTag": "a754581f-feab-49a9-b531-fab215b71701",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -182,7 +181,7 @@
             "expression": "MONTH([Date])",
             "formatString": "0",
             "isHidden": true,
-            "lineageTag": "cfe7698a-742a-47d9-bbc5-fc51cd670e9c",
+            "lineageTag": "ca63c9b0-ada9-4a12-ad02-e8a28ee7e4c9",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -202,7 +201,7 @@
             "dataType": "string",
             "expression": "FORMAT([Date], \"MMMM\")",
             "isHidden": true,
-            "lineageTag": "39ffa4de-529a-4cfa-9cc4-5236fe90c89a",
+            "lineageTag": "362e81a3-ed12-4755-a82e-282ad9a41bb5",
             "sortByColumn": "MonthNo",
             "summarizeBy": "none",
             "type": "calculated"
@@ -224,7 +223,7 @@
             "expression": "INT(([MonthNo] + 2) / 3)",
             "formatString": "0",
             "isHidden": true,
-            "lineageTag": "a43541ad-e2c5-4cd2-943f-661e70b05cce",
+            "lineageTag": "caa7c0a2-e6c1-4b6d-bfa8-761a58f50314",
             "summarizeBy": "none",
             "type": "calculated"
           },
@@ -244,7 +243,7 @@
             "dataType": "string",
             "expression": "\"Trim \" & [QuarterNo]",
             "isHidden": true,
-            "lineageTag": "c51155e6-1cc1-4eb9-b4d9-26584ec386e0",
+            "lineageTag": "fbfa65db-4eb1-44c0-aea3-bea6b537edb8",
             "sortByColumn": "QuarterNo",
             "summarizeBy": "none",
             "type": "calculated"
@@ -266,7 +265,7 @@
             "expression": "DAY([Date])",
             "formatString": "0",
             "isHidden": true,
-            "lineageTag": "c579ea89-006c-45a4-b9ac-666cb9175f31",
+            "lineageTag": "95111f83-ef85-4cee-8b31-56f344d9e9a3",
             "summarizeBy": "none",
             "type": "calculated"
           }
@@ -284,37 +283,37 @@
               {
                 "name": "Ano",
                 "column": "Ano",
-                "lineageTag": "d152c317-d3e4-46df-9067-e6b1099f645d",
+                "lineageTag": "ba28eb36-202a-4949-8b55-016982859dec",
                 "ordinal": 0
               },
               {
                 "name": "Trimestre",
                 "column": "Trimestre",
-                "lineageTag": "c3f02d77-1caf-4910-b80e-09e16d5ebfbe",
+                "lineageTag": "477cc813-f5cf-4186-8221-73a9790a5462",
                 "ordinal": 1
               },
               {
                 "name": "Mês",
                 "column": "Mês",
-                "lineageTag": "a0160537-7a19-4039-9497-7c2157fbc0e3",
+                "lineageTag": "e0ac82fe-098a-4dca-a6b1-d57b336c9c5f",
                 "ordinal": 2
               },
               {
                 "name": "Dia",
                 "column": "Dia",
-                "lineageTag": "7c189377-f50d-4b12-873e-0c86773e70b5",
+                "lineageTag": "60b84c90-3929-451a-b4de-715336576f4f",
                 "ordinal": 3
               }
             ],
-            "lineageTag": "de7b375d-55db-46bc-a1ad-11178d2bbaba"
+            "lineageTag": "0abb8fee-eb95-4140-8daa-23cbd38949d0"
           }
         ],
         "isHidden": true,
         "isPrivate": true,
-        "lineageTag": "039d4190-c738-4518-81c5-caceec27b616",
+        "lineageTag": "dcea5514-ab90-49e6-b995-3d55bb84e717",
         "partitions": [
           {
-            "name": "DateTableTemplate_99c2463b-36e1-44ca-b4d4-38350bb99698",
+            "name": "DateTableTemplate_00550e8d-5300-4312-bdaf-e3e58ba8eb4c",
             "mode": "import",
             "source": {
               "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
