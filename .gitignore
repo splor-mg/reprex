@@ -2,3 +2,5 @@ venv/
 .Rproj.user
 .Rhistory
 .idea/
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

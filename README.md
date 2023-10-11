@@ -39,3 +39,4 @@ Além disso, atualize a lista abaixo.
   - [Create reprex for csv reading following RFC4180 in PowerBI](https://github.com/splor-mg/atividades/issues/68)
 - [20230906T154034](https://github.com/splor-mg/reprex/tree/main/reprex/20230906T154034): reprex of a data.yaml for sing in DPM install_resources · Issue #36 
   - [Allow filter on data.yaml to allow download of a subset of resources](https://github.com/splor-mg/dpm/issues/36)
+- [20231110T122940](reprex/20231110T122940): powerbi version control on developer mode
