@@ -41,3 +41,4 @@ Além disso, atualize a lista abaixo.
   - [Allow filter on data.yaml to allow download of a subset of resources](https://github.com/splor-mg/dpm/issues/36)
 - [20231110T122940](reprex/20231110T122940): powerbi version control on developer mode
 - [20231024T084312](reprex/20231024T084312): The data source has not supported or has inconsistent contents: "delimiter" must be a 1-character string
+- [20231211T161847](reprex/20231211T161847): Read data file with no header and skip rows
