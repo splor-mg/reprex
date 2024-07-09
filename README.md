@@ -43,3 +43,4 @@ Além disso, atualize a lista abaixo.
 - [20231024T084312](reprex/20231024T084312): The data source has not supported or has inconsistent contents: "delimiter" must be a 1-character string
 - [20231211T161847](reprex/20231211T161847): Read data file with no header and skip rows
 - [20231228T143527](reprex/20231228T143527): Skipping errors in CLI fails
+- [20240709T121555](reprex/20240709T121555): `resource.infer(stats=True)` changes `dialect.delimiter` based on data

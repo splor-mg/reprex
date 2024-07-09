@@ -1,0 +1,17 @@
+name: data
+type: table
+path: data.csv
+scheme: file
+format: csv
+mediatype: text/csv
+encoding: utf-8
+schema:
+  fields:
+    - name: id
+      type: integer
+    - name: letters
+      type: string
+      missingValues:
+        - '-'
+      constraints:
+        required: true
