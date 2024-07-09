@@ -6,9 +6,11 @@ def build_package(descriptor: str = 'datapackage.yaml'):
     source = Package(descriptor)
 
     target_descriptor = {
+        "profile": "tabular-data-package",
         "name": source.name,
         "resources": [
             {
+            "profile": "tabular-data-resource",
             "name": resource_name,
             "path": f'data/{resource_name}.csv',
             "format": "csv",
