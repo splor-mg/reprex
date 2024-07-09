@@ -1,7 +1,5 @@
-from frictionless import Package, Resource
+from frictionless import Package
 from datetime import datetime
-from dpm.utils import as_identifier
-
 
 def build_package(descriptor: str = 'datapackage.yaml'):
     
@@ -30,3 +28,5 @@ def build_package(descriptor: str = 'datapackage.yaml'):
         resource.infer(stats=True)
 
     target.to_json('datapackage.json')
+
+build_package()
