@@ -1,11 +1,9 @@
 {
   "name": "aux_classificadores",
-  "profile": "tabular-data-package",
   "resources": [
     {
       "name": "acao",
       "type": "table",
-      "profile": "tabular-data-resource",
       "path": "data/acao.csv",
       "scheme": "file",
       "format": "csv",
@@ -49,7 +47,6 @@
     {
       "name": "elemento_item",
       "type": "table",
-      "profile": "tabular-data-resource",
       "path": "data/elemento_item.csv",
       "scheme": "file",
       "format": "csv",
@@ -87,7 +84,6 @@
     {
       "name": "fonte_recurso",
       "type": "table",
-      "profile": "tabular-data-resource",
       "path": "data/fonte_recurso.csv",
       "scheme": "file",
       "format": "csv",
@@ -131,7 +127,6 @@
     {
       "name": "funcional_programatica",
       "type": "table",
-      "profile": "tabular-data-resource",
       "path": "data/funcional_programatica.csv",
       "scheme": "file",
       "format": "csv",
@@ -198,7 +193,6 @@
     {
       "name": "natureza_receita",
       "type": "table",
-      "profile": "tabular-data-resource",
       "path": "data/natureza_receita.csv",
       "scheme": "file",
       "format": "csv",
@@ -236,7 +230,6 @@
     {
       "name": "uo",
       "type": "table",
-      "profile": "tabular-data-resource",
       "path": "data/uo.csv",
       "scheme": "file",
       "format": "csv",
@@ -292,5 +285,5 @@
       }
     }
   ],
-  "updated_at": "2024-07-09T12:21:27"
+  "updated_at": "2024-07-09T12:23:52"
 }
