@@ -18,8 +18,13 @@ resource = Resource.from_descriptor({
     "path": 'data.csv',
     "format": "csv",
     "encoding": "utf-8",
-    "schema": "schema.yaml"
+    "schema": {'fields': [{'name': 'chave_acao', 'type': 'string'},
+                       {'name': 'ano', 'type': 'integer'},
+                       {'name': 'acao_cod', 'type': 'integer'},
+                       {'name': 'acao_desc', 'type': 'string'}],
+            'primaryKey': ['ano', 'acao_cod']}
 })
 
+resource.dereference()
 resource.infer(stats=True)
 print(resource)
