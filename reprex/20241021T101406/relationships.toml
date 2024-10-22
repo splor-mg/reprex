@@ -1,0 +1,76 @@
+[keys]
+
+chave_execucao = [
+    "uo_cod",
+    "acao_cod",
+    "grupo_cod",
+    "iag_cod",
+    "fonte_cod",
+    "ipu_cod",
+    "elemento_item_cod_cod",
+    "contrato_cod"
+]
+
+chave_credito = [
+    "uo_cod",
+    "acao_cod",
+    "grupo_cod",
+    "iag_cod",
+    "fonte_cod",
+    "ipu_cod",
+    "elemento_item_cod"
+]
+
+chave_receita = [
+    "uo_cod",
+    "fonte_cod"
+]
+
+[dims.aux_acao]
+
+"path" = "datapackages/aux_classificadores/datapackage.json"
+"resource_name" = "acao"
+"key_name" = "chave_acao"
+
+[dims.aux_elemento_item]
+
+"path" = "datapackages/aux_classificadores/datapackage.json"
+"resource_name" = "elemento_item"
+"key_name" = "chave_elemento_item"
+
+[dims.aux_uo]
+
+"path" = "datapackages/aux_classificadores/datapackage.json"
+"resource_name" = "uo"
+"key_name" = "chave_uo"
+
+[dims.aux_agrupamento]
+
+"path" = "datapackages/aux-agrupamento-dcmefo/datapackage.json"
+"resource_name" = "aux-agrupamento-dcmefo"
+"key_name" = "chave_agrupamento"
+
+[dims.aux_agrupamento_obz]
+
+"path" = "datapackages/obz_2025/datapackage.json"
+"resource_name" = "aux_agrupamento_obz"
+"key_name" = "chave_agrupamento_obz"
+
+
+[dims.aux_uo_setor]
+
+"path" = "datapackages/obz_2025/datapackage.json"
+"resource_name" = "uo_setor"
+"key_name" = ""
+
+[facts.siafi.siafi2023]
+
+"path" = "datapackages/siafi_2024/datapackage.json"
+"resource_name" = "execucao"
+"key_name" = "chave_obz"
+
+[facts.siafi.siafi2024]
+
+"path" = "datapackages/siafi_2023/datapackage.json"
+"resource_name" = "execucao"
+"key_name" = "chave_obz"

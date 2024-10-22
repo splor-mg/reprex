@@ -4,3 +4,4 @@ venv/
 .idea/
 **/.pbi/localSettings.json
 **/.pbi/cache.abf
+reprex/20241021T101406/misc/
