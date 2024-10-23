@@ -29,38 +29,38 @@ chave_receita = [
 
 [data.execucao]
 
-"path" = "data/exec.csv"
+"path" = "datapackages/execucao/datapackage.json"
 "resource_name" = "execucao"
 "key_name" = "chave_execucao"
 
 [data.rp]
 
-"path" = "data/rp.csv"
+"path" = "datapackages/rp/datapackage.json"
 "resource_name" = "rp"
 "key_name" = "chave_execucao"
 
 
 [data.cota]
 
-"path" = "data/cota.csv"
+"path" = "datapackages/cota/datapackage.json"
 "resource_name" = "cota"
 "key_name" = "chave_credito"
 
 [data.credito]
 
-"path" = "data/credito.csv"
+"path" = "datapackages/credito/datapackage.json"
 "resource_name" = "credito"
 "key_name" = "chave_credito"
 
 
 [data.receita]
 
-"path" = "data/receita.csv"
+"path" = "datapackages/receita/datapackage.json"
 "resource_name" = "receita"
 "key_name" = "chave_receita"
 
 [data.obz]
 
-"path" = "data/obz.csv"
+"path" = "datapackages/obz/datapackage.json"
 "resource_name" = "obz"
 "key_name" = "chave_credito"
