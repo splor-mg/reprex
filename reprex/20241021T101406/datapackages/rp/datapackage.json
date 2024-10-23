@@ -1,0 +1,63 @@
+{
+  "resources": [
+    {
+      "name": "rp",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/rp.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:212307c34daa6d265f64eae2d21471eeb98684aef3333899783fc458f9bd16d5",
+      "bytes": 292,
+      "fields": 9,
+      "rows": 4,
+      "dialect": {
+        "csv": {
+           "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "uo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer"
+          },
+          {
+            "name": "contrato",
+            "type": "string"
+          },
+          {
+            "name": "vlr_inscrito_rpp",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+]
+}

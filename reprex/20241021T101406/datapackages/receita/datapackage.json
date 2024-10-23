@@ -1,0 +1,39 @@
+{
+  "resources": [
+    {
+      "name": "receita",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/receita.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:3398b0575cb714b49d2a1dfb4373d8b73a141a73f5c4425a2ed9212c95af2fe3",
+      "bytes": 111,
+      "fields": 3,
+      "rows": 4,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "uo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer"
+          },
+          {
+            "name": "vlr_arrecadado",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+]
+}

@@ -1,0 +1,55 @@
+{
+  "resources": [
+    {
+      "name": "credito",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/credito.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:abef150ec40be1fcecf79ddba74f1bc44bf28cd9ee197da9b48369d1c16c198f",
+      "bytes": 212,
+      "fields": 7,
+      "rows": 4,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "uo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer"
+          },
+          {
+            "name": "vlr_credito_autorizado",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+]
+}

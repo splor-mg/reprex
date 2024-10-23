@@ -1,0 +1,59 @@
+{
+  "resources": [  
+    {
+      "name": "cota",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/cota.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:d11fb2b0d2f0ced7c54e4824d08ca1944f060f2a9aeb3ca15564f510ea765480",
+      "bytes": 238,
+      "fields": 8,
+      "rows": 4,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "uo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer"
+          },
+          {
+            "name": "vlr_empenhado",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+]
+}

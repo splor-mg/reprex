@@ -1,0 +1,59 @@
+{
+  "resources": [
+    {
+      "name": "obz",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/obz.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:86ec602c81a0a3c4c4917ec2ae4bd732f08793559b8404f9b36c4bf3a085a900",
+      "bytes": 237,
+      "fields": 8,
+      "rows": 4,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }  
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "uo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer"
+          },
+          {
+            "name": "obz",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+]
+}

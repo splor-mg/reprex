@@ -1,0 +1,63 @@
+{
+  "resources": [
+    {
+      "name": "execucao",
+      "type": "table",
+      "profile": "tabular-data-resource",
+      "path": "data/execucao.csv",
+      "scheme": "file",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "hash": "sha256:2aa08f2e1b59206ff5ba0121b717aea061a5377a69c98899e88c4dc251499955",
+      "bytes": 294,
+      "fields": 9,
+      "rows": 4,
+      "dialect": {
+        "csv": {
+          "delimiter": ","
+        }
+      },
+      "schema": {
+        "fields": [
+          {
+            "name": "uo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "acao_cod",
+            "type": "integer"
+          },
+          {
+            "name": "grupo_cod",
+            "type": "integer"
+          },
+          {
+            "name": "iag_cod",
+            "type": "integer"
+          },
+          {
+            "name": "fonte_cod",
+            "type": "integer"
+          },
+          {
+            "name": "ipu_cod",
+            "type": "integer"
+          },
+          {
+            "name": "elemento_item_cod",
+            "type": "integer"
+          },
+          {
+            "name": "contrato",
+            "type": "string"
+          },
+          {
+            "name": "vlr_empenhado",
+            "type": "integer"
+          }
+        ]
+      }
+    }
+]
+}
