@@ -17,6 +17,12 @@ jobs:
     - run: pip install rpy2==3.5.12
     - run: python3 --version
     - run: pip list
-    - name: Installs packages declared in DESCRIPTION
-      uses: r-lib/actions/setup-r-dependencies@v2
+    - run: ls -la
+    - run: Rscript -e "install.packages('renv')" && Rscript -e 'renv::install()'
+    # - name: Installs packages declared in DESCRIPTION
+    #   uses: r-lib/actions/setup-r-dependencies@v2
+    #   with:
+    #     cache-version: 2
+    #     extra-packages: |
+    #       any::ggplot2
     - run: python3 scripts/main.py

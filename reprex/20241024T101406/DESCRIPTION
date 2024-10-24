@@ -1,14 +1,10 @@
-Package: armazem-siafi-dados
 Imports:
     renv,
     testthat (>= 3.0.0),
     gmailr (>= 2.0.0),
     purrr,
     stringr,
-    checks.execucao (>=0.0.0-9001),
     logger,
     frictionless,
     ggplot2
-Remotes:
-    github::splor-mg/checks-execucao
 Encoding: UTF-8
