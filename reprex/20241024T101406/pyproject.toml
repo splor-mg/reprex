@@ -1,0 +1,3 @@
+[tool.taskipy.tasks]
+run = { cmd = "docker run -it --rm --mount type=bind,source=${PWD}/scripts,target=/home python:3.10.0-slim-bullseye /bin/bash", help = "Runs an Ubuntu latest Docker Image." }
+runr = { cmd = "docker run -it --rm --mount type=bind,source=${PWD}/scripts,target=/home rocker/r-ver:4.3.1 /bin/bash", help = "Runs an Ubuntu latest Docker Image." }

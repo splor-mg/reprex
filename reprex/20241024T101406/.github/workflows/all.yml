@@ -1,0 +1,11 @@
+name: Updated
+
+on:
+  push
+
+jobs:
+  all:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Sets up R
+      uses: r-lib/actions/setup-r@v2
