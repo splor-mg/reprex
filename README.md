@@ -33,14 +33,15 @@ Além disso, atualize a lista abaixo.
   - [The data resource has an error: properties "path" and "data" is mutually exclusive when calling resource.to\_view() · Issue #1572 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1572)
 - [20230725T075521](reprex/20230725T075521)
   - [Update of primaryKey and foreignKeys when field is renamed · Issue #1560 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1560#issuecomment-1649788083)
-- [20230731T181821](reprex/20230731T181821): 
+- [20230731T181821](reprex/20230731T181821):
   - [Storing numbers in a string field in excel throws validation error · Issue #1576 · frictionlessdata/frictionless-py](https://github.com/frictionlessdata/frictionless-py/issues/1576)
 - [20230901T171459](https://github.com/splor-mg/reprex/tree/main/reprex/20230901T171459): Handling decimal separator using Power BI locale options and column types with locale · Issue #68
   - [Create reprex for csv reading following RFC4180 in PowerBI](https://github.com/splor-mg/atividades/issues/68)
-- [20230906T154034](https://github.com/splor-mg/reprex/tree/main/reprex/20230906T154034): reprex of a data.yaml for sing in DPM install_resources · Issue #36 
+- [20230906T154034](https://github.com/splor-mg/reprex/tree/main/reprex/20230906T154034): reprex of a data.yaml for sing in DPM install_resources · Issue #36
   - [Allow filter on data.yaml to allow download of a subset of resources](https://github.com/splor-mg/dpm/issues/36)
 - [20231110T122940](reprex/20231110T122940): powerbi version control on developer mode
 - [20231024T084312](reprex/20231024T084312): The data source has not supported or has inconsistent contents: "delimiter" must be a 1-character string
 - [20231211T161847](reprex/20231211T161847): Read data file with no header and skip rows
 - [20231228T143527](reprex/20231228T143527): Skipping errors in CLI fails
 - [20240709T121555](reprex/20240709T121555): `resource.infer(stats=True)` changes `dialect.delimiter` based on data
+- [20241024T101406](reprex/20241024T101406): Runs R scripts in Python

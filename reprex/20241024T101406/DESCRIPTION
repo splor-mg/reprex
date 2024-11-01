@@ -1,0 +1,10 @@
+Imports:
+    renv,
+    testthat (>= 3.0.0),
+    gmailr (>= 2.0.0),
+    purrr,
+    stringr,
+    logger,
+    frictionless,
+    ggplot2
+Encoding: UTF-8
