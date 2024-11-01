@@ -7,8 +7,8 @@ chave_execucao = [
     "iag_cod",
     "fonte_cod",
     "ipu_cod",
-    "elemento_item_cod_cod",
-    "contrato_cod"
+    "elemento_item_cod",
+    "contrato"
 ]
 
 chave_credito = [
@@ -17,8 +17,17 @@ chave_credito = [
     "grupo_cod",
     "iag_cod",
     "fonte_cod",
+    "ipu_cod"   
+]
+
+chave_cota = [
+    "uo_cod",
+    "acao_cod",
+    "grupo_cod",
+    "iag_cod",
+    "fonte_cod",
     "ipu_cod",
-    "elemento_item_cod"
+    "elemento_item_cod"   
 ]
 
 chave_receita = [
@@ -44,7 +53,7 @@ chave_receita = [
 
 "path" = "datapackages/cota/datapackage.json"
 "resource_name" = "cota"
-"key_name" = "chave_credito"
+"key_name" = "chave_cota"
 
 [data.credito]
 
@@ -63,4 +72,4 @@ chave_receita = [
 
 "path" = "datapackages/obz/datapackage.json"
 "resource_name" = "obz"
-"key_name" = "chave_credito"
+"key_name" = "chave_cota"
