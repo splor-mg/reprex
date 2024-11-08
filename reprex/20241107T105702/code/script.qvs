@@ -1,0 +1,135 @@
+alteracoes:
+LOAD
+	 ano&'|'&mes_cod&'|'&uo_cod&'|'&acao_cod&'|'&grupo_cod&'|'&iag_cod&'|'&fonte_cod&'|'&ipu_cod as chave_alt_exec,	
+//    // ano, 
+//     mes_cod, 
+//     uo_cod, 
+//     acao_cod, 
+//     grupo_cod, 
+//     iag_cod, 
+//     fonte_cod, 
+//     ipu_cod, 
+     decreto_num, 
+     vlr_suplementacao, 
+     vlr_anulacao
+FROM
+[data\alteracoes_orcamentarias.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq)
+;
+
+credito:
+LOAD 
+	 ano&'|'&uo_cod&'|'&acao_cod&'|'&grupo_cod&'|'&iag_cod&'|'&fonte_cod&'|'&ipu_cod as chave_cred,	
+//	 ano, 
+//     uo_cod, 
+//     acao_cod, 
+//     grupo_cod, 
+//     iag_cod, 
+//     fonte_cod, 
+//     ipu_cod, 
+     vlr_credito_inicial, 
+     vlr_credito_autorizado
+FROM
+[C:\projects\reprex\reprex\20241107T105702\data\credito.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+
+execucao:
+LOAD 
+     ano&'|'&mes_cod&'|'&uo_cod&'|'&acao_cod&'|'&grupo_cod&'|'&iag_cod&'|'&fonte_cod&'|'&ipu_cod as chave_alt_exec,
+//	 ano, 
+//     mes_cod, 
+//     uo_cod, 
+//     acao_cod, 
+//     grupo_cod, 
+//     iag_cod, 
+//     fonte_cod, 
+//     ipu_cod, 
+     elemento_item_cod, 
+     contrato_cod, 
+     vlr_empenhado, 
+     vlr_liquidado
+FROM
+[C:\projects\reprex\reprex\20241107T105702\data\execucao.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+receita:
+LOAD  
+     ano&'|'&mes_cod&'|'&uo_cod&'|'&fonte_cod as chave_rec,
+//     ano, 
+//     mes_cod, 
+//     uo_cod, 
+//     fonte_cod, 
+     classificacao, 
+     vlr_arrecadado
+FROM
+[C:\projects\reprex\reprex\20241107T105702\data\receita.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+NoConcatenate
+
+link:
+load
+ ano&'|'&mes_cod&'|'&uo_cod&'|'&acao_cod&'|'&grupo_cod&'|'&iag_cod&'|'&fonte_cod&'|'&ipu_cod as chave_alt_exec,	
+ ano&'|'&uo_cod&'|'&acao_cod&'|'&grupo_cod&'|'&iag_cod&'|'&fonte_cod&'|'&ipu_cod as chave_cred,	
+ ano&'|'&mes_cod&'|'&uo_cod&'|'&fonte_cod as chave_rec,
+ano,
+mes_cod,
+uo_cod,
+acao_cod,
+grupo_cod,
+iag_cod,
+fonte_cod,
+ipu_cod
+FROM
+[data\alteracoes_orcamentarias.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq)
+;
+
+Concatenate
+
+link:
+load
+//null() as chave_alt_exec,
+ano&'|'&uo_cod&'|'&acao_cod&'|'&grupo_cod&'|'&iag_cod&'|'&fonte_cod&'|'&ipu_cod as chave_cred,	
+ano,
+uo_cod,
+acao_cod,
+grupo_cod,
+iag_cod,
+fonte_cod,
+ipu_cod
+FROM
+[C:\projects\reprex\reprex\20241107T105702\data\credito.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+Concatenate
+
+link:
+load
+ano&'|'&mes_cod&'|'&uo_cod&'|'&acao_cod&'|'&grupo_cod&'|'&iag_cod&'|'&fonte_cod&'|'&ipu_cod as chave_alt_exec,
+ano&'|'&mes_cod&'|'&uo_cod&'|'&fonte_cod as chave_rec,
+ano,
+mes_cod,
+uo_cod,
+acao_cod,
+grupo_cod,
+iag_cod,
+fonte_cod,
+ipu_cod
+FROM
+[C:\projects\reprex\reprex\20241107T105702\data\execucao.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
+
+Concatenate
+
+link:
+load
+ano&'|'&mes_cod&'|'&uo_cod&'|'&fonte_cod as chave_rec,
+ano,
+mes_cod,
+uo_cod,
+fonte_cod
+FROM
+[C:\projects\reprex\reprex\20241107T105702\data\receita.csv]
+(txt, codepage is 1252, embedded labels, delimiter is ',', msq);
