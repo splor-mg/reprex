@@ -45,3 +45,4 @@ Além disso, atualize a lista abaixo.
 - [20231228T143527](reprex/20231228T143527): Skipping errors in CLI fails
 - [20240709T121555](reprex/20240709T121555): `resource.infer(stats=True)` changes `dialect.delimiter` based on data
 - [20241024T101406](reprex/20241024T101406): Runs R scripts in Python
+- [20250715T162719](reprex/20250715T162719): Create ERD using frictionless describe and package objects
