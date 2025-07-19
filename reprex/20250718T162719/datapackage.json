@@ -25,6 +25,46 @@
                         "name": "email",
                         "type": "string"
                       }
+                    ],
+                    "primaryKey": "id"
+                  }
+                },
+                {
+                  "name": "address",
+                  "type": "table",
+                  "path": "address.csv",
+                  "scheme": "file",
+                  "format": "csv",
+                  "mediatype": "text/csv",
+                  "encoding": "utf-8",
+                  "schema": {
+                    "fields": [
+                      {
+                        "name": "id",
+                        "type": "integer"
+                      },
+                      {
+                        "name": "street",
+                        "type": "string"
+                      },
+                      {
+                        "name": "number",
+                        "type": "string"
+                      },
+                      {
+                        "name": "user_id",
+                        "type": "integer"
+                      }
+                    ],
+                    "primaryKey": "id",
+                    "foreignKeys": [
+                      {
+                        "fields": "user_id",
+                        "reference": {
+                          "resource": "users",
+                          "fields": "id"
+                        }
+                      }
                     ]
                   }
                 }
