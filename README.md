@@ -46,3 +46,4 @@ Além disso, atualize a lista abaixo.
 - [20240709T121555](reprex/20240709T121555): `resource.infer(stats=True)` changes `dialect.delimiter` based on data
 - [20241024T101406](reprex/20241024T101406): Runs R scripts in Python
 - [20250715T162719](reprex/20250715T162719): Create ERD using frictionless describe and package objects
+- [20250731T080452](reprex/20250731T080452): Create a reprex with relational database design for current and historical civil servants data at SPLOR

@@ -1,0 +1,58 @@
+resources:
+  - name: servidores_ativos
+    type: table
+    path: data/servidores_ativos.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    schema:
+      fields:
+        - name: id
+          type: integer
+        - name: masp
+          type: string
+        - name: nome_completo
+          type: string
+        - name: cpf
+          type: string
+        - name: data_nascimento
+          type: date
+        - name: email_institucional
+          type: string
+      primaryKey:
+        - id
+      uniqueKeys:
+        - fields:
+            - cpf
+        - fields:
+            - masp
+
+  - name: servidores_historico
+    type: table
+    path: data/servidores_historico.csv
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    schema:
+      fields:
+        - name: id
+          type: integer
+        - name: servidor_id
+          type: integer
+        - name: data_ingresso
+          type: date
+        - name: data_saida
+          type: date
+        - name: observacoes
+          type: string
+      primaryKey:
+        - id
+      foreignKeys:
+        - fields:
+            - servidor_id
+          reference:
+            resource: servidores_ativos
+            fields:
+              - id
