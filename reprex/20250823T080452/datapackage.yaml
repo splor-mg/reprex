@@ -1,0 +1,17 @@
+resources:
+  - name: cpfs
+    type: table
+    path:
+      - 'data/cpfs1.csv'
+      - 'data/cpfs2.csv'
+      - 'data/cpfs3.csv'
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    schema:
+      fields:
+        - name: id
+          type: integer
+        - name: cpf
+          type: integer
