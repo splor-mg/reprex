@@ -1,10 +1,7 @@
 resources:
   - name: cpfs
     type: table
-    path:
-      - 'data/cpfs1.csv'
-      - 'data/cpfs2.csv'
-      - 'data/cpfs3.csv'
+    path: 'data/cpf*.csv'
     scheme: file
     format: csv
     mediatype: text/csv
